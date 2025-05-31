@@ -18,18 +18,18 @@ event.preventDefault();
   if (firVal >= 18) {
     setTimeout(() => {
       alert(`Welcome, ${secVal}. You can vote.`);
-    
-      resolve(); // Resolve the promise
+      resolve();
     }, 4000);
   } else {
     setTimeout(() => {
       alert(`Oh sorry ${secVal}. You aren't old enough.`);
-            reject(); // Reject the promise
+      reject();
     }, 4000);
   }
 });
-	promise.catch((error) => {
-	  console.error('Promise rejected:', error);
+
+promise.catch((error) => {
+  console.error('Promise rejected:', error);
 });
 	
 });
