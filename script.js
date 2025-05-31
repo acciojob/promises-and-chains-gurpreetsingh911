@@ -15,14 +15,18 @@ event.preventDefault();
   
 
   let promise = new Promise((resolve, reject) => {
-    if (age >= 18) {
-      setTimeout(() => resolve(`Welcome, ${name}. You can vote.`), 4000);
-    } else {
-      setTimeout(() => reject(`Oh sorry ${name}. You aren't old enough.`), 4000);
-    }
-  })
-  .then(message => alert(message))
-  .catch(message => alert(message));
+  if (firVal >= 18) {
+    setTimeout(() => {
+      alert(`Welcome, ${secVal}. You can vote.`);
+      resolve(); // Resolve the promise
+    }, 4000);
+  } else {
+    setTimeout(() => {
+      alert(`Oh sorry ${secVal}. You aren't old enough.`);
+      reject(); // Reject the promise
+    }, 4000);
+  }
+});
 	
 });
 
