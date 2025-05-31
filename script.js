@@ -9,7 +9,7 @@ event.preventDefault();
   let firVal = first.value;
   let secVal = second.value.trim();
   if(firVal == 0 || secVal.length == 0 ){
-  	window.alert("Please enter valid details.")  
+  	alert("Please enter valid details.")  
      return;
   }
   
