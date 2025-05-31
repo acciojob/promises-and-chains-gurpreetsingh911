@@ -15,7 +15,7 @@ event.preventDefault();
   
 
   let promise = new Promise((resole, reject)=>{
-  if(firVal >= 18){
+  if(firVal >= 18){ 
   setTimeout(()=> alert(`Welcome, ${secVal}. You can vote.`), 4000)  
   }else{
     setTimeout(()=> alert(`Oh sorry ${secVal}. You aren't old enough.`), 4000)  
