@@ -28,6 +28,9 @@ event.preventDefault();
     }, 4000);
   }
 });
+	promise.catch((error) => {
+	  console.error('Promise rejected:', error);
+});
 	
 });
 
